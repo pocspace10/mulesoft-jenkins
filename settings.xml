@@ -22,8 +22,8 @@
 		</server>
 		<server>
 			<id>jfrog-cloud</id>
-			<username>admin1</username>
-			<password>AdminAdmin1</password>
+			<username>pocspace11@gmail.com</username>
+			<password>${JFROG_PASSWORD}</password>
 		</server>
 	</servers>
 	<profiles>
