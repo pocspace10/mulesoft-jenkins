@@ -12,8 +12,8 @@
 		</server>
 		<server>
 			<id>github-maven-scm</id>
-			<username>gitlab-maven-scm</username>
-			<password>${PROJECT_ACCESS_TOKEN}</password>
+			<username>github-maven-scm</username>
+			<password>${GITHUB_ACCESS_TOKEN}</password>
 		</server>
 		<server>
 			<id>anypoint-exchange</id>
