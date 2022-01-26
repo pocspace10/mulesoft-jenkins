@@ -13,7 +13,6 @@
 		<developerConnection>scm:git:https://github.com/pocspace10/${project.artifactId}</developerConnection>
 		<url>https://github.com/pocspace10/${project.artifactId}</url>
 		<tag>HEAD</tag>
-		
 	</scm>
 	
 	<properties>
@@ -37,7 +36,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
-					<scmCommentPrefix>[skip ci]</scmCommentPrefix>
+					<scmCommentPrefix>[ci skip]</scmCommentPrefix>
 				</configuration>
 			</plugin>
 			<plugin>
