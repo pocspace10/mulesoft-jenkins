@@ -108,13 +108,13 @@
 		<repository>
 			<id>jfrog-cloud</id>
 			<name>Jfrog Maven Local/</name>
-			<url>https://pocspace10.jfrog.io/artifactory/default-maven-local/</url>
+			<url>https://pocspace.jfrog.io/artifactory/global-libs-release-local/</url>
 			<layout>default</layout>
 		</repository>
 		<snapshotRepository>
 			<id>jfrog-cloud</id>
 			<name>Jfrog Maven Local/</name>
-			<url>https://pocspace10.jfrog.io/artifactory/default-maven-local-snapshot/</url>
+			<url>https://pocspace.jfrog.io/artifactory/global-libs-snapshot-local/</url>
 			<layout>default</layout>
 		</snapshotRepository>
 	</distributionManagement>
