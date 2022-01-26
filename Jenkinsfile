@@ -13,7 +13,7 @@ pipeline
                 sh 'echo "HI"'
             }
         }
-    }
+    
     stage('Master'){
         steps{
                 
@@ -21,4 +21,4 @@ pipeline
             }
         }
     }
- }
+}
