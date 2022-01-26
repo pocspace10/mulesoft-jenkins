@@ -4,7 +4,7 @@
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>mulesoft-jenkins</artifactId>
-	<version>1.0.23-SNAPSHOT</version>
+	<version>1.0.22-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
 	<name>mulesoft-jenkins</name>
@@ -49,6 +49,7 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
+						<artifact>${ARTIFACT}</artifact>
 						<applicationName>mulesoft-jenkins-qwe${APP_TAG}</applicationName>
 						<environment>${ENVIRONMENT}</environment>
 						<region>${REGION}</region>
