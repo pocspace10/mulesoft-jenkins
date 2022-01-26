@@ -45,9 +45,10 @@ pipeline
                     #!/bin/bash
                     ls -a
                     cd target/checkout
-                    ls -a
+                    ls -R
+                    find . -name *.jar | head -1
                     cat pom.xml
-                    mvn mule:deploy \
+                    mvn -s settings.xml mule:deploy \
                     -DENVIRONMENT=Production \
                     -DCONNECTED_APP_CLIENTID=$ANYPOINTCC_USR \
                     -DCONNECTED_APP_CLIENTSECRET=$ANYPOINTCC_PSW \
