@@ -29,6 +29,7 @@ pipeline
         environment{
             GITHUB = credentials('POCSPACETEN')
             JFROG = credentials('JFROG')
+            ANYPOINTCC = credentials('ANYPOINTCC')
         }
         when {
             branch 'master'
@@ -46,7 +47,11 @@ pipeline
                     cd target/checkout
                     ls -a
                     cat pom.xml
-                    find . -name "*.jar"
+                    mvn mule:deploy \
+                    -DENVIRONMENT=Production \
+                    -DCONNECTED_APP_CLIENTID=$ANYPOINTCC_USR \
+                    -DCONNECTED_APP_CLIENTSECRET=$ANYPOINTCC_PSW \
+                    -DAPP_TAG=prod
                    ''' 
             }
         }
