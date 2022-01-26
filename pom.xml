@@ -13,6 +13,7 @@
 		<developerConnection>scm:git:https://github.com/pocspace10/${project.artifactId}</developerConnection>
 		<url>https://github.com/pocspace10/${project.artifactId}</url>
 		<tag>HEAD</tag>
+		
 	</scm>
 	
 	<properties>
