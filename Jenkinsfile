@@ -9,7 +9,7 @@ pipeline
 
     stage('Run CI?'){
         steps{
-                scmSkip(deleteBuild: true, skipPattern:'.*\\[ci skip\\].*')
+                scmSkip(deleteBuild: false, skipPattern:'.*\\[ci skip\\].*')
                 sh 'echo "HI"'
             }
         }
