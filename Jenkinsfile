@@ -43,11 +43,8 @@ pipeline
                 sh 'mvn -s settings.xml -B release:perform -Darguments="-DskipTest" -DGITHUB_ACCESS_TOKEN=$GITHUB_PSW -DJFROG_PASSWORD=$JFROG_PSW'
                 sh ''' 
                     #!/bin/bash
-                    ls -a
                     cd target/checkout
                     ls -R
-                    ls -d *.jar | head -1
-                    cat pom.xml
                     mvn -s settings.xml mule:deploy \
                     -DENVIRONMENT=Production \
                     -DCONNECTED_APP_CLIENTID=$ANYPOINTCC_USR \

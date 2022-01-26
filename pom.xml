@@ -55,6 +55,7 @@
 						<region>${REGION}</region>
 						<workers>${WORKERS}</workers>
 						<workerType>${WORKER_TYPE}</workerType>
+						<skipDeploymentVerification>true</skipDeploymentVerification>
 						<connectedAppClientId>${CONNECTED_APP_CLIENTID}</connectedAppClientId>
 						<connectedAppClientSecret>${CONNECTED_APP_CLIENTSECRET}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
