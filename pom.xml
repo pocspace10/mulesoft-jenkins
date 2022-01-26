@@ -49,7 +49,7 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<artifact>${ARTIFACT}</artifact>
+						<artifact>./target/${project.artifactId}-${project.version}-mule-application.jar</artifact>
 						<applicationName>mulesoft-jenkins-qwe${APP_TAG}</applicationName>
 						<environment>${ENVIRONMENT}</environment>
 						<region>${REGION}</region>
