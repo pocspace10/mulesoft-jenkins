@@ -46,7 +46,7 @@ pipeline
                     ls -a
                     cd target/checkout
                     ls -a
-                    find . -name '*.jar'
+                    find . -name "*.jar"
                    """ 
             }
         }
