@@ -13,7 +13,7 @@
 		<server>
 			<id>github-maven-scm</id>
 			<username>github-maven-scm</username>
-			<password>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</password>
+			<password>${GITHUB_ACCESS_TOKEN}</password>
 		</server>
 		<server>
 			<id>anypoint-exchange</id>
