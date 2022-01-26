@@ -14,11 +14,10 @@ pipeline
         }
     
     stage('Master'){
+        when {
+            branch 'master'
+        }
         steps{ 
-
-            when {
-                branch 'master'
-            }
                 sh 'git checkout master'
                 sh 'git pull origin master'
                 sh 'git config --global user.name pocspace10'
