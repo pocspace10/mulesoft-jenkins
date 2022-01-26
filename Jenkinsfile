@@ -41,8 +41,12 @@ pipeline
                 sh 'mvn -s settings.xml -B release:prepare -Darguments="-DskipTests" -DGITHUB_ACCESS_TOKEN=$GITHUB_PSW -DJFROG_PASSWORD=$JFROG_PSW'
                 sh 'mvn -s settings.xml -B release:perform -Darguments="-DskipTest" -DGITHUB_ACCESS_TOKEN=$GITHUB_PSW -DJFROG_PASSWORD=$JFROG_PSW'
                 sh 'cat pom.xml'
-                bat 'tree'
-                sh 'find ./target/checkout/ -name "*.jar"'
+                sh """ 
+                    #!/bin/bash
+                    cd /target/checkout/
+                    ls -a
+                    cat pom.xml
+                   """ 
             }
         }
     }
