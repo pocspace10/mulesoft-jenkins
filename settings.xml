@@ -20,6 +20,11 @@
 			<username>~~~Client~~~</username>
 			<password>${CONNECTED_APP_CLIENTID}~?~${CONNECTED_APP_CLIENTSECRET}</password>
 		</server>
+		<server>
+			<id>jfrog-cloud</id>
+			<username>admin1</username>
+			<password>AdminAdmin1</password>
+		</server>
 	</servers>
 	<profiles>
 		<profile>
