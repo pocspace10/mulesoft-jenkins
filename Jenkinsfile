@@ -13,6 +13,18 @@ pipeline
             }
         }
     
+    stage('Dev'){
+        environment{
+            JFROG = credentials('JFROG')
+        }
+        when {
+            branch 'dev'
+        }
+        steps{
+            sh 'mvn -s settings.xml -B deploy -DJFROG_PASSWORD=$JFROG_PSW'
+        }
+    }
+    
     stage('Master'){
         environment{
             GITHUB = credentials('POCSPACETEN')
