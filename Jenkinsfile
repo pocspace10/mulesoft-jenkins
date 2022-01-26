@@ -46,7 +46,7 @@ pipeline
                     ls -a
                     cd target/checkout
                     ls -R
-                    find . -name *.jar | head -1
+                    ls -d *.jar | head -1
                     cat pom.xml
                     mvn -s settings.xml mule:deploy \
                     -DENVIRONMENT=Production \
