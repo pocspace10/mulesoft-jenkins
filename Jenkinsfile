@@ -42,9 +42,7 @@ pipeline
                 sh 'mvn -s settings.xml -B release:perform -Darguments="-DskipTest" -DGITHUB_ACCESS_TOKEN=$GITHUB_PSW -DJFROG_PASSWORD=$JFROG_PSW'
                 sh 'cat pom.xml'
                 bat 'tree'
-                sh '''
-                        find ./target/checkout/ -name "*.jar"
-                   '''
+                sh 'find ./target/checkout/ -name "*.jar"'
             }
         }
     }
