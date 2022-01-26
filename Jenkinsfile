@@ -43,10 +43,7 @@ pipeline
                 sh 'cat pom.xml'
                 bat 'tree'
                 sh '''
-                        find . -name '*.jar'
-                   '''
-                sh '''
-                        echo "$(find . -name '*.jar' | head -1)"
+                        find ./target/checkout/ -name "*.jar"
                    '''
             }
         }
