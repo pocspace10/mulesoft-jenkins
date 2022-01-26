@@ -31,7 +31,7 @@ pipeline
                 sh 'cd target/checkout'
                 sh 'cat pom.xml'
                 sh '''
-                        echo '$(find . -name '*.jar' | head -1)'
+                        echo "$(find . -name '*.jar' | head -1)"
                    '''
             }
         }
