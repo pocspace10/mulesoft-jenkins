@@ -17,7 +17,7 @@ pipeline
     stage('Master'){
         steps{
                 
-                sh 'eche "JI"'
+                sh 'echo "JI"'
             }
         }
     }
